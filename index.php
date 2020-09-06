@@ -1,5 +1,7 @@
 <?
 if ($_GET["id"] != ""){
+	$_GET["d"] = date();
+	$_GET["d"] = date();
 	print_r($_GET);
 	$myfile = fopen("logfile.txt", "a");
 	$jsonText = "{\"id\": \""+$_GET("id")+"\", \"t\": \""+$_GET("t")+"\", \"h\": \""+$_GET("h")+"\", \"d\": \""+date("Y-m-d h:i:sa")+"\"}";
